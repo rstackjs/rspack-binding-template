@@ -11,7 +11,7 @@
 
 ## Quick Start
 
-📖 **[Create custom binding](https://rspack-contrib.github.io/rspack-rust-book/custom-binding/getting-started/index.html)**
+📖 **[Create custom binding](https://rstackjs.github.io/rspack-rust-book/custom-binding/getting-started/index.html)**
 
 ## Why?
 
@@ -21,7 +21,7 @@ _Rspack Custom Binding_ allows you to extend Rspack directly with native Rust co
 
 With custom binding, you can still use the familiar JavaScript API (`@rspack/core`), but your custom logic runs natively, combining the best of both worlds.
 
-Check out [rationale](https://rspack-contrib.github.io/rspack-rust-book/custom-binding/getting-started/rationale.html) for more details.
+Check out [rationale](https://rstackjs.github.io/rspack-rust-book/custom-binding/getting-started/rationale.html) for more details.
 
 ## Supported Platforms
 
@@ -42,4 +42,4 @@ Check out [rationale](https://rspack-contrib.github.io/rspack-rust-book/custom-b
 
 > **Note:** Node.js support requires >= 18.
 >
-> Multi-platform publishing and CI support is powered by [rspack-toolchain](https://github.com/rspack-contrib/rspack-toolchain). For the latest supported platforms, see the [official supported targets list](https://github.com/rspack-contrib/rspack-toolchain/tree/main?tab=readme-ov-file#supported-targets).
+> Multi-platform publishing and CI support is powered by [rspack-toolchain](https://github.com/rstackjs/rspack-toolchain). For the latest supported platforms, see the [official supported targets list](https://github.com/rstackjs/rspack-toolchain/tree/main?tab=readme-ov-file#supported-targets).

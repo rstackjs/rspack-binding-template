@@ -49,7 +49,7 @@ jobs:
 
   build:
     name: Build
-    uses: rspack-contrib/rspack-toolchain/.github/workflows/build.yml@v1
+    uses: rstackjs/rspack-toolchain/.github/workflows/build.yml@v1
 
   test:
     name: Test
