@@ -25,7 +25,7 @@ env:
 jobs:
   build:
     name: Build
-    uses: rspack-contrib/rspack-toolchain/.github/workflows/build.yml@v1
+    uses: rstackjs/rspack-toolchain/.github/workflows/build.yml@v1
     with:
       napi-build-command: pnpm build --release
 
@@ -89,10 +89,10 @@ jobs:
 
       - name: Get NAPI info
         id: napi-info
-        uses: rspack-contrib/rspack-toolchain/get-napi-info@v1
+        uses: rstackjs/rspack-toolchain/get-napi-info@v1
 
       - name: Download rspack binding
-        uses: rspack-contrib/rspack-toolchain/download-rspack-binding@v1
+        uses: rstackjs/rspack-toolchain/download-rspack-binding@v1
         with:
           path: ${{ steps.napi-info.outputs.binding-directory }}/artifacts
 
