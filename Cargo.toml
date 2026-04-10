@@ -3,24 +3,24 @@ members  = ["crates/*"]
 resolver = "2"
 
 [workspace.package]
-edition = "2021"
+edition = "2024"
 
 [workspace.dependencies]
-rspack_cacheable   = { version = "=0.5.8" }
-rspack_collections = { version = "=0.5.8" }
-rspack_core  = { version = "=0.5.8" }
-rspack_error = { version = "=0.5.8" }
-rspack_hook  = { version = "=0.5.8" }
+rspack_cacheable   = { version = "=0.100.0-rc.1" }
+rspack_collections = { version = "=0.100.0-rc.1" }
+rspack_core        = { version = "=0.100.0-rc.1" }
+rspack_error       = { version = "=0.100.0-rc.1" }
+rspack_hook        = { version = "=0.100.0-rc.1" }
 
 async-trait    = { version = "0.1" }
-rspack_sources = { version = "0.4.8" }
+rspack_sources = { version = "0.4.21" }
 
-rspack_binding_build          = { version = "=0.5.8" }
-rspack_binding_builder        = { version = "=0.5.8" }
-rspack_binding_builder_macros = { version = "=0.5.8" }
+rspack_binding_build          = { version = "=0.100.0-rc.1" }
+rspack_binding_builder        = { version = "=0.100.0-rc.1" }
+rspack_binding_builder_macros = { version = "=0.100.0-rc.1" }
 
-napi        = { version = "=3.2.2" }
-napi-derive = { version = "=3.2.2" }
+napi        = { version = "=3.8.4" }
+napi-derive = { version = "=3.5.3" }
 
 
 # Copied from https://github.com/web-infra-dev/rspack/blob/main/Cargo.toml

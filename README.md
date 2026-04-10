@@ -40,6 +40,6 @@ Check out [rationale](https://rstackjs.github.io/rspack-rust-book/custom-binding
 | aarch64-linux-android         | ubuntu-22.04   | Android ARM64       |
 | armv7-linux-androideabi       | ubuntu-22.04   | Android ARMv7       |
 
-> **Note:** Node.js support requires >= 18.
+> **Note:** Rspack 2.0 requires Node.js 20.19+ or 22.12+.
 >
 > Multi-platform publishing and CI support is powered by [rspack-toolchain](https://github.com/rstackjs/rspack-toolchain). For the latest supported platforms, see the [official supported targets list](https://github.com/rstackjs/rspack-toolchain/tree/main?tab=readme-ov-file#supported-targets).
