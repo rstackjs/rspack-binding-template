@@ -3,7 +3,7 @@ use std::sync::Arc;
 use rspack_core::{ApplyContext, Compilation, CompilationProcessAssets, Plugin};
 use rspack_error::Result;
 use rspack_hook::{plugin, plugin_hook};
-use rspack_sources::{ConcatSource, RawSource, SourceExt};
+use rspack_sources::{ConcatSource, RawStringSource, SourceExt};
 
 /// A plugin that adds a banner to the output `main.js`.
 #[derive(Debug)]
@@ -24,7 +24,7 @@ async fn process_assets(&self, compilation: &mut Compilation) -> Result<()> {
   if let Some(asset) = asset {
     let original_source = asset.get_source().cloned();
     asset.set_source(Some(Arc::new(ConcatSource::new([
-      RawSource::from(self.banner.as_str()).boxed(),
+      RawStringSource::from(self.banner.as_str()).boxed(),
       original_source.unwrap().boxed(),
     ]))));
   }
