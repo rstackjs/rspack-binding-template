@@ -19,8 +19,8 @@ rspack_binding_build          = { version = "=0.100.5" }
 rspack_binding_builder        = { version = "=0.100.5" }
 rspack_binding_builder_macros = { version = "=0.100.5" }
 
-napi        = { version = "=3.8.4" }
-napi-derive = { version = "=3.5.3" }
+napi        = { version = "=3.8.6" }
+napi-derive = { version = "=3.5.5" }
 
 
 # Copied from https://github.com/web-infra-dev/rspack/blob/main/Cargo.toml
