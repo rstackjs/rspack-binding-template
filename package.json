@@ -31,7 +31,7 @@
     "lint-staged": "lint-staged"
   },
   "dependencies": {
-    "@rspack/core": "2.0.0-rc.1",
+    "@rspack/core": "2.0.5",
     "@rspack-template/binding": "workspace:*"
   },
   "devDependencies": {
