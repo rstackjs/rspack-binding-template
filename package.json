@@ -9,7 +9,7 @@
     "type": "git",
     "url": "git+https://github.com/rstackjs/rspack-binding-template.git"
   },
-  "packageManager": "pnpm@10.20.0",
+  "packageManager": "pnpm@10.34.1",
   "engines": {
     "node": ">=20.19.0 <21 || >=22.12.0"
   },
