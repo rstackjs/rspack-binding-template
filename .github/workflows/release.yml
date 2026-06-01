@@ -25,7 +25,7 @@ env:
 jobs:
   build:
     name: Build
-    uses: rstackjs/rspack-toolchain/.github/workflows/build.yml@v1
+    uses: rstackjs/rspack-toolchain/.github/workflows/build.yml@c0b7f47d0d657adbc4fddb3b3f2b607019004491 # v1
     with:
       napi-build-command: pnpm build --release
 
@@ -45,7 +45,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
       - name: Display release mode
         run: |
@@ -59,7 +59,7 @@ jobs:
           fi
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: '22'
 
@@ -70,7 +70,7 @@ jobs:
         run: corepack prepare
 
       - name: Cache pnpm dependencies
-        uses: actions/cache@v3
+        uses: actions/cache@6f8efc29b200d32929f49075959781ed54ec270c # v3
         with:
           path: ~/.pnpm-store
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
@@ -89,10 +89,10 @@ jobs:
 
       - name: Get NAPI info
         id: napi-info
-        uses: rstackjs/rspack-toolchain/get-napi-info@a0ff0d85e7dd792d5ed23c4d55f369e4b87aae87
+        uses: rstackjs/rspack-toolchain/get-napi-info@c0b7f47d0d657adbc4fddb3b3f2b607019004491
 
       - name: Download rspack binding
-        uses: rstackjs/rspack-toolchain/download-rspack-binding@a0ff0d85e7dd792d5ed23c4d55f369e4b87aae87
+        uses: rstackjs/rspack-toolchain/download-rspack-binding@c0b7f47d0d657adbc4fddb3b3f2b607019004491
         with:
           path: ${{ steps.napi-info.outputs.binding-directory }}/artifacts
 
