@@ -274,7 +274,7 @@ dependencies = [
  "rspack_core",
  "rspack_error",
  "rspack_hook",
- "rspack_sources",
+ "rspack_sources 0.101.3",
 ]
 
 [[package]]
@@ -2090,9 +2090,9 @@ dependencies = [
 
 [[package]]
 name = "memchr"
-version = "2.8.1"
+version = "2.8.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6b947ae49db0d222b1dbc6b113ce7248a3fc3a6ca21b696717bfc000ba4484d8"
+checksum = "88904434abc2901f197fe8cc55f0445e7ded921dba5911dad2e2b39b48e663c4"
 
 [[package]]
 name = "memfd"
@@ -3230,7 +3230,7 @@ dependencies = [
  "rkyv 0.8.16",
  "rspack_cacheable_macros",
  "rspack_resolver",
- "rspack_sources",
+ "rspack_sources 0.4.23",
  "rustc-hash",
  "serde_json",
  "smol_str",
@@ -3313,7 +3313,7 @@ dependencies = [
  "rspack_paths",
  "rspack_regex",
  "rspack_resolver",
- "rspack_sources",
+ "rspack_sources 0.4.23",
  "rspack_storage",
  "rspack_tasks",
  "rspack_util",
@@ -3435,7 +3435,7 @@ dependencies = [
  "anyhow",
  "indoc",
  "rspack_error",
- "rspack_sources",
+ "rspack_sources 0.4.23",
  "rspack_util",
  "rspack_workspace",
  "rustc-hash",
@@ -3518,7 +3518,7 @@ dependencies = [
  "rspack_error",
  "rspack_fs",
  "rspack_paths",
- "rspack_sources",
+ "rspack_sources 0.4.23",
  "rspack_util",
  "rustc-hash",
  "serde_json",
@@ -4678,6 +4678,20 @@ dependencies = [
  "dyn-clone",
  "memchr",
  "rkyv 0.8.16",
+ "rustc-hash",
+ "serde",
+ "simd-json",
+ "simd-utf16-len",
+ "static_assertions",
+]
+
+[[package]]
+name = "rspack_sources"
+version = "0.101.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4ef0baae809cc8087ad7097a374cf7b9bfb42a0f35e2c5dff2efa965fa8eae8e"
+dependencies = [
+ "memchr",
  "rustc-hash",
  "serde",
  "simd-json",
