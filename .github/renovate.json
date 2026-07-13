@@ -1,27 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended"
-  ],
-  "enabledManagers": [
-    "npm",
-    "cargo"
-  ],
+  "extends": ["github>rstackjs/renovate"],
+  "enabledManagers": ["npm", "cargo"],
   "packageRules": [
     {
-      "matchPackageNames": [
-        "@napi-rs/**"
-      ],
+      "matchPackageNames": ["@napi-rs/**", "napi", "napi-**"],
       "enabled": false,
       "description": "Disable updates for napi-rs packages"
-    },
-    {
-      "matchPackageNames": [
-        "napi",
-        "napi-**"
-      ],
-      "enabled": false,
-      "description": "Disable updates for napi packages"
     },
     {
       "matchPackageNames": [
@@ -34,48 +19,8 @@
       "groupSlug": "rspack-deps",
       "enabled": true,
       "semanticCommitType": "chore",
-      "postUpdateOptions": [
-        "cargoUpdateLockFile"
-      ],
+      "postUpdateOptions": ["cargoUpdateLockFile"],
       "description": "Group all rspack related packages for coordinated workspace updates"
-    },
-    {
-      "matchManagers": [
-        "cargo",
-        "npm"
-      ],
-      "groupName": "Other dependencies",
-      "groupSlug": "other-deps",
-      "semanticCommitType": "chore",
-      "matchPackageNames": [
-        "!@napi-rs/**",
-        "!napi",
-        "!napi-**",
-        "!@rspack/**",
-        "!rspack_*",
-        "!rspack_sources",
-        "!rspack_resolver"
-      ]
     }
-  ],
-  "schedule": [
-    "before 6am on monday"
-  ],
-  "timezone": "Asia/Shanghai",
-  "labels": [
-    "dependencies"
-  ],
-  "assignees": [],
-  "reviewers": [],
-  "prConcurrentLimit": 5,
-  "prHourlyLimit": 2,
-  "semanticCommits": "enabled",
-  "semanticCommitType": "chore",
-  "semanticCommitScope": "deps",
-  "lockFileMaintenance": {
-    "enabled": true,
-    "schedule": [
-      "before 6am on monday"
-    ]
-  }
+  ]
 }
