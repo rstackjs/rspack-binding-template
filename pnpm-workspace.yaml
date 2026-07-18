@@ -3,3 +3,14 @@ packages:
   - 'examples/use-plugin'
   - 'examples/use-loader'
   - '.'
+
+minimumReleaseAgeExclude:
+  - '@rsbuild/*'
+  - '@rslib/*'
+  - '@rslint/*'
+  - '@rspack/*'
+  - '@rspress/*'
+  - '@rstackjs/*'
+  - '@rstest/*'
+  - 'rsbuild-plugin-*'
+  - rstack
