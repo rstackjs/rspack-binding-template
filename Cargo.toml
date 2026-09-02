@@ -6,18 +6,18 @@ resolver = "2"
 edition = "2024"
 
 [workspace.dependencies]
-rspack_cacheable   = { version = "=0.100.5" }
-rspack_collections = { version = "=0.100.5" }
-rspack_core        = { version = "=0.100.5" }
-rspack_error       = { version = "=0.100.5" }
-rspack_hook        = { version = "=0.100.5" }
+rspack_cacheable   = { version = "=0.102.2" }
+rspack_collections = { version = "=0.102.2" }
+rspack_core        = { version = "=0.102.2" }
+rspack_error       = { version = "=0.102.2" }
+rspack_hook        = { version = "=0.102.2" }
 
 async-trait    = { version = "0.1" }
 rspack_sources = { version = "0.4.21" }
 
-rspack_binding_build          = { version = "=0.100.5" }
-rspack_binding_builder        = { version = "=0.100.5" }
-rspack_binding_builder_macros = { version = "=0.100.5" }
+rspack_binding_build          = { version = "=0.102.2" }
+rspack_binding_builder        = { version = "=0.102.2" }
+rspack_binding_builder_macros = { version = "=0.102.2" }
 
 napi        = { version = "=3.8.6" }
 napi-derive = { version = "=3.5.5" }
