@@ -169,13 +169,13 @@ dependencies = [
 
 [[package]]
 name = "async-trait"
-version = "0.1.89"
+version = "0.1.92"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9035ad2d096bed7955a320ee7e2230574d28fd3c3a0f186cbea1ff3c7eed5dbb"
+checksum = "82f6aeea286b8eb4dd3431a1be1b59d290ace00f5bfd8e2a159bc2a05e2c1667"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.117",
+ "syn 3.0.5",
 ]
 
 [[package]]
@@ -274,7 +274,7 @@ dependencies = [
  "rspack_core",
  "rspack_error",
  "rspack_hook",
- "rspack_sources",
+ "rspack_sources 0.102.2",
 ]
 
 [[package]]
@@ -2090,9 +2090,9 @@ dependencies = [
 
 [[package]]
 name = "memchr"
-version = "2.8.1"
+version = "2.8.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6b947ae49db0d222b1dbc6b113ce7248a3fc3a6ca21b696717bfc000ba4484d8"
+checksum = "cf8baf1c55e62ffcace7a9f06f4bd9cd3f0c4beb022d3b367256b91b87513d98"
 
 [[package]]
 name = "memfd"
@@ -3230,7 +3230,7 @@ dependencies = [
  "rkyv 0.8.16",
  "rspack_cacheable_macros",
  "rspack_resolver",
- "rspack_sources",
+ "rspack_sources 0.4.23",
  "rustc-hash",
  "serde_json",
  "smol_str",
@@ -3313,7 +3313,7 @@ dependencies = [
  "rspack_paths",
  "rspack_regex",
  "rspack_resolver",
- "rspack_sources",
+ "rspack_sources 0.4.23",
  "rspack_storage",
  "rspack_tasks",
  "rspack_util",
@@ -3435,7 +3435,7 @@ dependencies = [
  "anyhow",
  "indoc",
  "rspack_error",
- "rspack_sources",
+ "rspack_sources 0.4.23",
  "rspack_util",
  "rspack_workspace",
  "rustc-hash",
@@ -3518,7 +3518,7 @@ dependencies = [
  "rspack_error",
  "rspack_fs",
  "rspack_paths",
- "rspack_sources",
+ "rspack_sources 0.4.23",
  "rspack_util",
  "rustc-hash",
  "serde_json",
@@ -4686,6 +4686,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "rspack_sources"
+version = "0.102.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0fe03783cbf7e4b070882fa04a85bf3ebc80d06863a238eefc3ae7ab981e1870"
+dependencies = [
+ "memchr",
+ "rustc-hash",
+ "serde",
+ "simd-json",
+ "simd-utf16-len",
+ "static_assertions",
+]
+
+[[package]]
 name = "rspack_storage"
 version = "0.100.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -5031,9 +5045,9 @@ checksum = "703d5c7ef118737c72f1af64ad2f6f8c5e1921f818cdcb97b8fe6fc69bf66214"
 
 [[package]]
 name = "simd-json"
-version = "0.17.0"
+version = "0.17.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4255126f310d2ba20048db6321c81ab376f6a6735608bf11f0785c41f01f64e3"
+checksum = "e32d7ab2678282d21e53374fbead7119b7eacbede73685dcaac472870a29a11c"
 dependencies = [
  "halfbrown",
  "ref-cast",
@@ -6471,6 +6485,17 @@ name = "syn"
 version = "2.0.117"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e665b8803e7b1d2a727f4023456bbbbe74da67099c585258af0ad9c5013b9b99"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "unicode-ident",
+]
+
+[[package]]
+name = "syn"
+version = "3.0.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "12df2e0110f65b775f769bb17ef989067a1d931b2eb822bd4346631eeada89f9"
 dependencies = [
  "proc-macro2",
  "quote",

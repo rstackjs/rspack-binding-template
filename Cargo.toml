@@ -12,8 +12,8 @@ rspack_core        = { version = "=0.100.5" }
 rspack_error       = { version = "=0.100.5" }
 rspack_hook        = { version = "=0.100.5" }
 
-async-trait    = { version = "0.1" }
-rspack_sources = { version = "0.4.21" }
+async-trait    = { version = "0.1.92" }
+rspack_sources = { version = "0.102.2" }
 
 rspack_binding_build          = { version = "=0.100.5" }
 rspack_binding_builder        = { version = "=0.100.5" }
