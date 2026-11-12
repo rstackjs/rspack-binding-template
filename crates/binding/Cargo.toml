@@ -7,15 +7,13 @@ publish           = false
 crate-type = ["cdylib"]
 
 [dependencies]
-rspack_binding_builder        = { workspace = true }
-rspack_binding_builder_macros = { workspace = true }
+rspack_binding_builder = { workspace = true }
 
 rspack_cacheable   = { workspace = true }
 rspack_collections = { workspace = true }
 rspack_core        = { workspace = true }
 rspack_error       = { workspace = true }
 rspack_hook        = { workspace = true }
-rspack_sources     = { workspace = true }
 
 async-trait = { workspace = true }
 

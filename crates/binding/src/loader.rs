@@ -58,6 +58,7 @@ pub(crate) async fn resolve_loader(
   _context: &rspack_core::Context,
   _resolver: &rspack_core::Resolver,
   loader: &rspack_core::ModuleRuleUseLoader,
+  _data: &mut rspack_core::ModuleFactoryCreateData,
 ) -> Result<Option<rspack_core::BoxLoader>> {
   if loader.loader.starts_with("builtin:my-banner-loader") {
     let banner = loader.options.clone().unwrap_or_default();
