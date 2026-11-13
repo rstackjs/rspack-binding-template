@@ -1,9 +1,9 @@
 use std::sync::Arc;
 
+use rspack_core::rspack_sources::{ConcatSource, RawStringSource, SourceExt};
 use rspack_core::{ApplyContext, Compilation, CompilationProcessAssets, Plugin};
 use rspack_error::Result;
 use rspack_hook::{plugin, plugin_hook};
-use rspack_sources::{ConcatSource, RawStringSource, SourceExt};
 
 /// A plugin that adds a banner to the output `main.js`.
 #[derive(Debug)]
